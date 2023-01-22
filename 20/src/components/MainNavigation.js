@@ -7,7 +7,7 @@ export default function MainNavigation() {
             <nav>
                 <ul className={classes.list}>
                     <li>
-                        <NavLink to="/" className={({ isActive }) => isActive && classes.active}>Home</NavLink>
+                        <NavLink to="/" className={({ isActive }) => isActive ? classes.active : ''}>Home</NavLink>
                     </li>
                     <li>
                         <NavLink to="/products">Products</NavLink>
