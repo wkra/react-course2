@@ -48,8 +48,6 @@ router.post('/', async (req, res, next) => {
     errors.image = 'Invalid image.';
   }
 
-  console.log(errors)
-
   if (Object.keys(errors).length > 0) {
     return res.status(422).json({
       message: 'Adding the event failed due to validation errors.',
