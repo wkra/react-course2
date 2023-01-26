@@ -32,7 +32,7 @@ export async function getStaticPaths() {
     // fallback: false - support only written paths, any other page will give 404
     // fallback: true - generate static for written paths, but also
     //      try to fetch data for current path which is not included
-    fallback: false,
+    fallback: true,
     paths: meetups.map((meetup) => ({
       params: {
         meetupId: meetup._id.toString()
